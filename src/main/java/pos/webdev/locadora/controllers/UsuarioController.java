@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import pos.webdev.locadora.ProjetofinalwebdevApplication;
+import pos.webdev.locadora.jpa.IRepositorioCliente;
 import pos.webdev.locadora.jpa.IRepositorioUsuario;
+import pos.webdev.locadora.jpa.dao.DAOCliente;
 import pos.webdev.locadora.jpa.dao.DAOUsuario;
+import pos.webdev.locadora.model.Cliente;
 import pos.webdev.locadora.model.Usuario;
 
 import javax.servlet.http.HttpSession;
@@ -97,4 +100,18 @@ public class UsuarioController {
             }
             return modelView;
         }
+
+    @RequestMapping("/usuario/excluir")
+    public String excluirUsuario(Usuario usuario, Long id, HttpSession session) {
+        ModelAndView modelView = new ModelAndView();
+
+        if (session.getAttribute("usuarioLogado") == null) {
+            modelView.setViewName("login");
+        } else {
+            IRepositorioUsuario repo = context.getBean(IRepositorioUsuario.class);
+            DAOUsuario daoUsuario = new DAOUsuario(repo);
+            daoUsuario.delete(usuario);
+        }
+        return "redirect:/usuario/relatorio";
+    }
     }

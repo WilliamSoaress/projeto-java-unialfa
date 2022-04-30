@@ -3,6 +3,7 @@ package pos.webdev.locadora.jpa.dao;
 import java.util.List;
 
 import pos.webdev.locadora.jpa.IRepositorioUsuario;
+import pos.webdev.locadora.model.Cliente;
 import pos.webdev.locadora.model.Usuario;
 
 public class DAOUsuario {
@@ -38,6 +39,10 @@ public class DAOUsuario {
 
     public void editarUsuario(Usuario c) {
         this.rc.save(c);
+    }
+
+    public void delete(Usuario usuario){
+        this.rc.delete(usuario);
     }
 
     
