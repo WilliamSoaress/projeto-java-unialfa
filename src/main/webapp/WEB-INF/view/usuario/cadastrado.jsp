@@ -61,9 +61,6 @@
 </nav>
     <div class="conteudo mx-auto bg-dark">
         <h1 class="bg-dark rounded my-3 p-3 fs-3 text-center">Vehicle Locator</h1>
-        <div class="d-grid gap-2">
-            <a class="btn btn-primary" href="/home">Home</a>
-        </div>
         <hr class="bg-secondary">
         <p>Funcionário cadastrado com sucesso!</p>
         <p>
