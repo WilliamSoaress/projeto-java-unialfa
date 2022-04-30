@@ -1,0 +1,13 @@
+
+version: '3'
+
+services:
+  postgres-compose:
+    image: postgres
+    environment:
+      POSTGRES_USERNAME: "bd"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
+    volumes:
+      - C:\images\db:/var/lib/postgresql/data

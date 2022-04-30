@@ -1,0 +1,99 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1{
+    color: #6272a4;
+}
+
+
+nav{
+    background-color: #44475a;
+    color: #50fa7b;
+}
+
+#navTitle{
+    color: #6272a4;
+    font-size: 25px;
+}
+
+.conteudo {
+    width: 50%;
+    max-width: 700px;
+    align-content: center;
+    margin-top: 5%;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+@media only screen and (max-width: 830px) {
+    .conteudo{
+        width: 95%;
+        font-size: 11px;
+        max-width: 100%;
+    }
+
+    .table{
+        width: 90%;
+        box-sizing: content-box;
+
+    }
+
+}
+
+.btn-success{
+    background-color: #6272a4;
+    color: #f8f8f2;
+    border-color:#6272a4;
+}
+
+.btn-success:hover{
+    background-color: #50fa7b;
+    color: #282a36;
+}
+
+.btn-primary{
+    background-color: #6272a4;
+    color: #f8f8f2;
+    border-color:#6272a4;
+}
+
+.btn-primary:hover{
+    background-color: #ff79c6;
+    color: #282a36;
+}
+
+.bg-success{
+    background-color: #8be9fd!important;
+    color: #282a36;
+}
+
+.botaoExcluir{
+    color: #ff5555;
+}
+
+.botaoExcluir:hover{
+    color: #f8f8f2;
+}
+
+.botaoEditar{
+    color: #8be9fd;
+}
+
+.botaoEditar:hover{
+    color: #f8f8f2;
+}
