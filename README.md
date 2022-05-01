@@ -1,2 +1,12 @@
-# projetofinalspringboot-webdev
-Projeto final da disciplina de Java Spring Boot - Pós-Graduação Web Dev - Universidade Alfa de Umuarama
+## Trabalho Spring Boot - Unialfa
+
+__Inicialização do Projeto__
+
+- Rodar o comando "`docker-compose up`" no terminal do diretório do projeto
+- Subir aplicação pela IDE
+- Acessar "http://localhost:8080/"
+
+__Acesso padrão__
+
+- Usuário: user
+- Senha: 123
